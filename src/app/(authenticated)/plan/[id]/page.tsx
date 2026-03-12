@@ -5,6 +5,7 @@ import { getTranslations } from 'next-intl/server';
 import { createServerSupabaseClient } from '@/lib/supabase/server';
 import { ExerciseCard } from '@/components/plan/exercise-card';
 import { PlanHeaderActions, AddExerciseButton } from '@/components/plan/plan-actions';
+import { StartSessionButton } from '@/components/dashboard/start-session-button';
 import { ExerciseWithDefaults, WorkoutPlan } from '@/lib/types';
 
 interface PlanPageProps {
@@ -59,12 +60,11 @@ export default async function PlanPage({ params }: PlanPageProps) {
             </Link>
             <h1 className="text-xl font-bold">{planName}</h1>
           </div>
-          <Link
-            href={`/session/new?plan=${id}`}
-            className="shrink-0 rounded-lg bg-white/20 px-3 py-1.5 text-sm font-semibold text-white backdrop-blur-sm hover:bg-white/30 transition-colors"
-          >
-            {t('startSession')}
-          </Link>
+          <StartSessionButton
+            planId={id}
+            label={t('startSession')}
+            className="shrink-0 rounded-lg bg-white/20 px-3 py-1.5 text-sm font-semibold text-white backdrop-blur-sm hover:bg-white/30 disabled:opacity-60 transition-colors"
+          />
         </div>
         <p className="mt-1 pl-9 text-sm text-white/70">
           {exercises.length} {exercises.length === 1 ? 'exercise' : 'exercises'}

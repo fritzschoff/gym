@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 import { WorkoutPlan } from '@/lib/types';
+import { StartSessionButton } from './start-session-button';
 
 interface PlanCardProps {
   plan: WorkoutPlan;
@@ -54,12 +55,11 @@ export async function PlanCard({
         <p className="text-xs text-white/60">
           {t('lastSession')}: {lastLabel}
         </p>
-        <Link
-          href={`/session/new?plan=${plan.id}`}
-          className="rounded-lg bg-white/20 px-3 py-1.5 text-sm font-semibold text-white backdrop-blur-sm hover:bg-white/30 transition-colors"
-        >
-          {t('startSession')}
-        </Link>
+        <StartSessionButton
+          planId={plan.id}
+          label={t('startSession')}
+          className="rounded-lg bg-white/20 px-3 py-1.5 text-sm font-semibold text-white backdrop-blur-sm hover:bg-white/30 disabled:opacity-60 transition-colors"
+        />
       </div>
     </div>
   );
