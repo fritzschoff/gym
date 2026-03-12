@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "Início",
+    "progress": "Progresso",
+    "history": "Histórico",
+    "settings": "Configurações"
+  },
+  "dashboard": {
+    "title": "Painel",
+    "thisWeek": "Esta Semana",
+    "streak": "Sequência",
+    "newPRs": "Novos PRs",
+    "startSession": "Iniciar Sessão",
+    "lastSession": "Última Sessão",
+    "exercises": "exercícios",
+    "daysAgo": "dias atrás",
+    "resumeWorkout": "Retomar Treino",
+    "addPlan": "Adicionar Plano",
+    "neverTrained": "Nunca treinou"
+  },
+  "plan": {
+    "startSession": "Iniciar Sessão",
+    "addExercise": "Adicionar Exercício",
+    "editExercise": "Editar Exercício",
+    "deleteExercise": "Excluir Exercício",
+    "sets": "Séries",
+    "reps": "Repetições",
+    "rest": "Descanso",
+    "notSet": "Não definido",
+    "confirmDelete": "Confirmar Exclusão",
+    "editPlan": "Editar Plano",
+    "deletePlan": "Excluir Plano",
+    "createPlan": "Criar Plano",
+    "seconds": "segundos"
+  },
+  "session": {
+    "elapsed": "Decorrido",
+    "rest": "Descanso",
+    "done": "Feito",
+    "finish": "Finalizar",
+    "summary": "Resumo",
+    "newPR": "Novo PR",
+    "setsCompleted": "Séries Concluídas",
+    "duration": "Duração",
+    "noWeight": "Sem Peso",
+    "finishWorkout": "Finalizar Treino",
+    "setNumber": "Série",
+    "exercisesCompleted": "Exercícios Concluídos"
+  },
+  "progress": {
+    "title": "Progresso",
+    "weightProgression": "Progressão de Peso",
+    "volume": "Volume",
+    "sessionDuration": "Duração da Sessão",
+    "frequency": "Frequência",
+    "prBoard": "Quadro de PRs",
+    "selectExercise": "Selecionar Exercício",
+    "noData": "Sem dados disponíveis",
+    "kg": "kg",
+    "personalRecord": "Recorde Pessoal"
+  },
+  "history": {
+    "title": "Histórico",
+    "noSessions": "Nenhuma sessão registrada",
+    "filterByPlan": "Filtrar por Plano",
+    "allPlans": "Todos os Planos",
+    "viewDetails": "Ver Detalhes",
+    "setsLogged": "séries registradas"
+  },
+  "settings": {
+    "title": "Configurações",
+    "language": "Idioma",
+    "theme": "Tema",
+    "changePassword": "Alterar Senha",
+    "exportData": "Exportar Dados",
+    "light": "Claro",
+    "dark": "Escuro",
+    "system": "Sistema",
+    "currentPassword": "Senha Atual",
+    "newPassword": "Nova Senha",
+    "confirmPassword": "Confirmar Senha",
+    "passwordChanged": "Senha alterada com sucesso",
+    "exportSuccess": "Dados exportados com sucesso",
+    "logout": "Sair"
+  },
+  "auth": {
+    "title": "GymTracker",
+    "password": "Senha",
+    "login": "Entrar",
+    "invalidPassword": "Senha inválida",
+    "enter": "Entrar"
+  },
+  "common": {
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "confirm": "Confirmar",
+    "edit": "Editar",
+    "back": "Voltar",
+    "kg": "kg",
+    "reps": "repetições",
+    "seconds": "segundos",
+    "loading": "Carregando...",
+    "error": "Ocorreu um erro"
+  },
+  "intensity": {
+    "mod": "Moderado",
+    "int": "Intenso",
+    "pint": "Pouco Intenso",
+    "pmod": "Pouco Moderado"
+  }
+}

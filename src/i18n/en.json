@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "Home",
+    "progress": "Progress",
+    "history": "History",
+    "settings": "Settings"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "thisWeek": "This Week",
+    "streak": "Streak",
+    "newPRs": "New PRs",
+    "startSession": "Start Session",
+    "lastSession": "Last Session",
+    "exercises": "exercises",
+    "daysAgo": "days ago",
+    "resumeWorkout": "Resume Workout",
+    "addPlan": "Add Plan",
+    "neverTrained": "Never trained"
+  },
+  "plan": {
+    "startSession": "Start Session",
+    "addExercise": "Add Exercise",
+    "editExercise": "Edit Exercise",
+    "deleteExercise": "Delete Exercise",
+    "sets": "Sets",
+    "reps": "Reps",
+    "rest": "Rest",
+    "notSet": "Not set",
+    "confirmDelete": "Confirm Delete",
+    "editPlan": "Edit Plan",
+    "deletePlan": "Delete Plan",
+    "createPlan": "Create Plan",
+    "seconds": "seconds"
+  },
+  "session": {
+    "elapsed": "Elapsed",
+    "rest": "Rest",
+    "done": "Done",
+    "finish": "Finish",
+    "summary": "Summary",
+    "newPR": "New PR",
+    "setsCompleted": "Sets Completed",
+    "duration": "Duration",
+    "noWeight": "No Weight",
+    "finishWorkout": "Finish Workout",
+    "setNumber": "Set",
+    "exercisesCompleted": "Exercises Completed"
+  },
+  "progress": {
+    "title": "Progress",
+    "weightProgression": "Weight Progression",
+    "volume": "Volume",
+    "sessionDuration": "Session Duration",
+    "frequency": "Frequency",
+    "prBoard": "PR Board",
+    "selectExercise": "Select Exercise",
+    "noData": "No data available",
+    "kg": "kg",
+    "personalRecord": "Personal Record"
+  },
+  "history": {
+    "title": "History",
+    "noSessions": "No sessions recorded",
+    "filterByPlan": "Filter by Plan",
+    "allPlans": "All Plans",
+    "viewDetails": "View Details",
+    "setsLogged": "sets logged"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "changePassword": "Change Password",
+    "exportData": "Export Data",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm Password",
+    "passwordChanged": "Password changed successfully",
+    "exportSuccess": "Data exported successfully",
+    "logout": "Logout"
+  },
+  "auth": {
+    "title": "GymTracker",
+    "password": "Password",
+    "login": "Login",
+    "invalidPassword": "Invalid password",
+    "enter": "Enter"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "edit": "Edit",
+    "back": "Back",
+    "kg": "kg",
+    "reps": "reps",
+    "seconds": "seconds",
+    "loading": "Loading...",
+    "error": "An error occurred"
+  },
+  "intensity": {
+    "mod": "Moderate",
+    "int": "Intense",
+    "pint": "Low Intensity",
+    "pmod": "Low Moderate"
+  }
+}
