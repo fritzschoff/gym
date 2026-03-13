@@ -65,7 +65,9 @@
     "filterByPlan": "Filtrar por Plano",
     "allPlans": "Todos os Planos",
     "viewDetails": "Ver Detalhes",
-    "setsLogged": "séries registradas"
+    "setsLogged": "séries registradas",
+    "deleteSession": "Excluir Sessão",
+    "confirmDeleteSession": "Tem certeza que deseja excluir esta sessão? Isso não pode ser desfeito."
   },
   "settings": {
     "title": "Configurações",

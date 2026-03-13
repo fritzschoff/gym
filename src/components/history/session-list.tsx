@@ -1,7 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useTransition } from 'react';
 import { SessionDetail } from './session-detail';
+import { deleteSession } from '@/actions/sessions';
 
 interface SessionSet {
   id: string;
@@ -34,6 +35,8 @@ interface SessionListProps {
   tFilterByPlan: string;
   tAllPlans: string;
   tSetsLogged: string;
+  tDeleteSession: string;
+  tConfirmDeleteSession: string;
 }
 
 function formatDateTime(dateStr: string): string {
@@ -63,9 +66,13 @@ export function SessionList({
   tFilterByPlan,
   tAllPlans,
   tSetsLogged,
+  tDeleteSession,
+  tConfirmDeleteSession,
 }: SessionListProps) {
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [planFilter, setPlanFilter] = useState<string>('all');
+  const [deletingId, setDeletingId] = useState<string | null>(null);
+  const [isPending, startTransition] = useTransition();
 
   // Build plan options from session data
   const planOptions = Array.from(
@@ -175,7 +182,48 @@ export function SessionList({
               </button>
 
               {/* Expanded detail */}
-              {isExpanded && <SessionDetail groups={exerciseGroups} />}
+              {isExpanded && (
+                <>
+                  <SessionDetail groups={exerciseGroups} />
+                  <div className="border-t border-gray-200 px-4 py-3 dark:border-slate-700">
+                    {deletingId === session.id ? (
+                      <div className="space-y-2">
+                        <p className="text-sm text-red-600 dark:text-red-400">
+                          {tConfirmDeleteSession}
+                        </p>
+                        <div className="flex gap-2">
+                          <button
+                            onClick={() => {
+                              startTransition(async () => {
+                                await deleteSession(session.id);
+                                setDeletingId(null);
+                                setExpandedId(null);
+                              });
+                            }}
+                            disabled={isPending}
+                            className="rounded-lg bg-red-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-red-700 disabled:opacity-50"
+                          >
+                            {isPending ? '...' : tDeleteSession}
+                          </button>
+                          <button
+                            onClick={() => setDeletingId(null)}
+                            className="rounded-lg bg-gray-200 px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-300 dark:bg-slate-700 dark:text-gray-300 dark:hover:bg-slate-600"
+                          >
+                            Cancel
+                          </button>
+                        </div>
+                      </div>
+                    ) : (
+                      <button
+                        onClick={() => setDeletingId(session.id)}
+                        className="text-sm font-medium text-red-600 hover:text-red-700 dark:text-red-400 dark:hover:text-red-300"
+                      >
+                        {tDeleteSession}
+                      </button>
+                    )}
+                  </div>
+                </>
+              )}
             </div>
           );
         })}

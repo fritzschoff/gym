@@ -65,7 +65,9 @@
     "filterByPlan": "Filter by Plan",
     "allPlans": "All Plans",
     "viewDetails": "View Details",
-    "setsLogged": "sets logged"
+    "setsLogged": "sets logged",
+    "deleteSession": "Delete Session",
+    "confirmDeleteSession": "Are you sure you want to delete this session? This cannot be undone."
   },
   "settings": {
     "title": "Settings",

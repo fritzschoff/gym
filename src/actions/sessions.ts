@@ -57,3 +57,11 @@ export async function finishSession(sessionId: string) {
   revalidatePath('/dashboard');
   revalidatePath('/history');
 }
+
+export async function deleteSession(sessionId: string) {
+  const supabase = await createServerSupabaseClient();
+  await supabase.from('sessions').delete().eq('id', sessionId);
+  revalidatePath('/dashboard');
+  revalidatePath('/history');
+  revalidatePath('/progress');
+}

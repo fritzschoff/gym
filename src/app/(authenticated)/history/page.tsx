@@ -74,6 +74,8 @@ export default async function HistoryPage() {
         tFilterByPlan={t('filterByPlan')}
         tAllPlans={t('allPlans')}
         tSetsLogged={t('setsLogged')}
+        tDeleteSession={t('deleteSession')}
+        tConfirmDeleteSession={t('confirmDeleteSession')}
       />
     </div>
   );
